@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  become: true
+  vars:
+  - name: Avisheka
+  tasks:
+  - name: Giving output of variable
+    debug: 
+     msg: "{{name}}"

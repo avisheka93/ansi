@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  become: true
+  tasks:
+  - name: Archiving files
+    archive:
+     path: /home/copytest
+     dest: /home
+     format: zip

@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  become: true
+  tasks: 
+  - name: Removing an user
+    user:
+     name: avi
+     state: absent
+     remove: yes
+     force: yes
+
+   

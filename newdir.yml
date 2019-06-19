@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  become: true
+  tasks:
+  - name: Creating a new directory
+    file:
+     path: /home/test
+     state: directory
+     mode: 775 
+

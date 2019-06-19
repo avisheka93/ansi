@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  become: true
+  tasks:
+  - name: Creating an user
+    user: 
+     name: avi
+     password: name
+     groups: ansible
+     shell: /bin/bash

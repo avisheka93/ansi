@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  become: true
+  tasks:
+  - name: Date and Time
+    debug:
+     var: ansible_date_time.date
+     var: ansible_date_time.time

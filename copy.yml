@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  become: true
+  tasks:
+  - name: copying content
+    copy:
+     content: "Hello World"
+     dest: /home/copytest
+

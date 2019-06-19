@@ -1,0 +1,11 @@
+---
+- hosts: localhost
+  become: true
+  tasks:
+  - name: Using With_items
+    file:
+     path: "{{items}}"
+     state: directory
+     with_items:
+     - '/home/t1'
+     - '/home/t2'

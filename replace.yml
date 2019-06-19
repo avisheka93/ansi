@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  become: true
+  tasks:
+  - name: replacing strings
+    replace:
+     path: /home/copytest
+     regexp: Hello
+     replace: Bye
